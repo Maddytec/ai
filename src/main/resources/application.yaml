@@ -1,0 +1,14 @@
+server:
+  port: '8081'
+
+spring:
+  application:
+    name: ai
+  ai:
+    ollama:
+      model: llama3
+      base-url: http://localhost:11434/api
+
+ai:
+  ollama:
+    rule: 'Você é um especialista em tecnologia e deve responder apenas perguntas técnicas, quanto a outros assuntos apenas responda "Não tenho essa informação disponivel.". Agora vem as questões e assuntos dos usuarios: %s'
